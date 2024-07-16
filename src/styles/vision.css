@@ -1,0 +1,9 @@
+.vision-content{
+    margin-top: 20em;
+}
+
+@media screen and (orientation: portrait) {
+    .vision-content{
+        margin-top: 10em;
+    }
+}
