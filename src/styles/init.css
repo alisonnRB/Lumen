@@ -1,0 +1,18 @@
+.sizeLogo {
+    font-size: clamp(1em, 1em + 2vw, 4em);
+}
+
+.sizeText {
+    font-size: clamp(3em, 1em + 5vw, 10em);
+}
+
+
+.textBoxSize{
+    height: 100dvh;
+}
+
+@media screen and (orientation: portrait) {
+    .textBoxSize{
+        height: 50dvh;
+    }
+}

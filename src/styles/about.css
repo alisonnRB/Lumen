@@ -1,0 +1,53 @@
+.aboutBox {
+    margin-top: 500px;
+}
+
+.about-content {
+    height: 100dvh;
+}
+
+.aboutTitle{
+    font-size: clamp(.6em, 1em + 1.2vw, 2em);
+    word-break: none;
+}
+
+.aboutText{
+    text-align: justify;
+    font-size: clamp(.2em, 1em + 1.2vw, 1.9em);
+}
+
+@media screen and (orientation: portrait) {
+    .aboutBox {
+        margin-top: -40dvh;
+    }
+
+    .about-content {
+        height: 40dvh;
+    }
+
+    .aboutTitle{
+        font-size: clamp(.6em, 1em + 1.2vw, .8em);
+    }
+
+    .aboutText{
+        font-size: clamp(.2em, .7em + 1vw, .95em);
+    }
+}
+
+@media screen and (orientation: portrait) and (max-width: 740px) {
+    .aboutBox {
+        margin-top: -40dvh;
+    }
+
+    .about-content {
+        height: 40dvh;
+    }
+
+    .aboutTitle{
+        font-size: clamp(.6em, 1em + 1.2vw, .8em);
+    }
+
+    .aboutText{
+        font-size: clamp(.2em, .7em + .1vw, .5em);
+    }
+}

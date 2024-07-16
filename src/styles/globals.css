@@ -3,13 +3,16 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('./init.css');
+@import url('./about.css');
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   outline: none;
+  overflow-x: hidden;
 }
-
 
 ::-webkit-scrollbar {
   background-color: transparent;
@@ -17,5 +20,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #CFCFCF;
+  background-color: #000000;
 }
