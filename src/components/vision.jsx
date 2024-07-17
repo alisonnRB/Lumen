@@ -6,24 +6,28 @@ import capa from '../assets/capaPage.jpg';
 import contate from '../assets/contatePage.png';
 
 export default function Vision() {
-    const [isPortrait, setIsPortrait] = useState(window.matchMedia("(orientation: portrait)").matches);
+    const [isPortrait, setIsPortrait] = useState(false);
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(orientation: portrait)");
+        // Executar apenas no lado do cliente
+        if (typeof window !== 'undefined') {
+            const mediaQuery = window.matchMedia("(orientation: portrait)");
+            setIsPortrait(mediaQuery.matches);
 
-        const handleOrientationChange = (e) => {
-            setIsPortrait(e.matches);
-        };
+            const handleOrientationChange = (e) => {
+                setIsPortrait(e.matches);
+            };
 
-        mediaQuery.addEventListener('change', handleOrientationChange);
+            mediaQuery.addEventListener('change', handleOrientationChange);
 
-        return () => {
-            mediaQuery.removeEventListener('change', handleOrientationChange);
-        };
+            return () => {
+                mediaQuery.removeEventListener('change', handleOrientationChange);
+            };
+        }
     }, []);
 
     const { ref, inView } = useInView({
-        threshold: isPortrait ? 0.45 : 0.2, // Diferente threshold para portrait
+        threshold: isPortrait ? 0.45 : 0.2,
     });
 
     useEffect(() => {
@@ -58,7 +62,6 @@ export default function Vision() {
     return (
         <section ref={ref} className='w-[100dvw] vision-content flex flex-col pb-5'>
             <div className='flex self-end justify-center text-justify w-[50dvw] relative'>
-
                 <div id='sobreposicao' className='bg-bg absolute w-[60%] h-[60%] z-30 overflow-clip transition-opacity delay-75'>
                     <div className='relative right-[27%]'>
                         <h1 className='visionTitle font-bold text-page w-[46dvw]'>
@@ -70,7 +73,6 @@ export default function Vision() {
                 <h1 className='visionTitle font-bold text-bg w-[46dvw] relative z-20'>
                     MINHA PAIXÃO É<br /> TORNAR VOCÊ,<br /> MAIS VOCÊ
                 </h1>
-
             </div>
 
             <div className='flex w-[100dvw]'>
@@ -86,7 +88,7 @@ export default function Vision() {
                         <Image
                             src={capa}
                             alt="Fotografia das duas irmãs da Lumen"
-                            fill
+                            fill={true}
                             style={{ objectFit: 'cover' }}
                             quality={100}
                         />
@@ -113,9 +115,7 @@ export default function Vision() {
                         NOS CONTATE
                     </a>
                 </span>
-
             </div>
-
         </section>
-    )
+    );
 }

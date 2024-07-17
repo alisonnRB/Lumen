@@ -10,7 +10,7 @@ export default function About() {
                     <Image
                         src={aboutImage}
                         alt="Fotografia das duas irmãs da Lumen"
-                        fill
+                        fill={true}
                         style={{ objectFit: 'contain' }}
                         quality={100}
                     />
