@@ -10,14 +10,14 @@ export default function About() {
                     <Image
                         src={aboutImage}
                         alt="Fotografia das duas irmãs da Lumen"
-                        layout="fill"
-                        objectFit="contain"
+                        fill
+                        style={{ objectFit: 'contain' }}
                         quality={100}
                     />
                 </span>
             </div>
 
-            <div className="w-1/2 about-content pl-[8vw] pr-[8vw] flex flex-col items-center gap-10 text-page">
+            <div className="w-1/2 about-content px-[7vw] flex flex-col items-center gap-5 text-page">
 
                 <h1 className="aboutTitle font-bold">SOBRE A LUMEN</h1>
 

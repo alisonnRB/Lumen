@@ -3,6 +3,7 @@ import About from "@/components/about";
 import Vision from "@/components/vision";
 
 export default function Home() {
+
   return (
     <main>
       <Initial />

@@ -6,7 +6,7 @@ export default function Document() {
         <Head>
           <meta charSet="UTF-8" />
         </Head>
-      <body className="bg-bg">
+      <body className="transition-colors delay-75">
         <Main />
         <NextScript />
       </body>
