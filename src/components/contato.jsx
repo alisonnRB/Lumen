@@ -11,7 +11,7 @@ export default function Contato() {
                 <div className="relative flex max-w-[30%] top-[2rem]">
                     <Image
                         src={contato}
-                        alt="Fotografia das duas irmãs da Lumen"
+                        alt="Fotografia em familia feita pela Lumem para recordar a importancia de registrar momentos"
                         style={{ objectFit: 'contain' }}
                         quality={100}
                         className="z-20"
@@ -24,7 +24,7 @@ export default function Contato() {
 
                     <h1 className="contact-title text-page text-center">CRIE MOMENTOS<br /> RECORDE EMOÇÕES</h1>
 
-                    <Link href={''}>
+                    <Link href={'https://www.instagram.com/'}>
                         <div className="contact-buton bg-page px-5 py-2 cursor-pointer">
                             ENTRE EM CONTATO
                         </div>

@@ -13,7 +13,7 @@ export default function Portfolio() {
             <div className="grid grid-cols-2 grid-rows-2">
 
                 <div className="relative col-span-1 row-span-2 z-10 flex items-end">
-                    <video autoPlay loop muted className="w-full h-full object-cover">
+                    <video autoPlay loop muted className="w-full h-full object-cover" alt="Video de uma model, em um ensaio fotografico da lumen.">
                         <source src="/video/model.mp4" type="video/mp4" />
                     </video>
 
@@ -23,7 +23,7 @@ export default function Portfolio() {
                 <div className="relative col-span-1 z-10">
                     <Image
                         src={book}
-                        alt="Fotografia das duas irmãs da Lumen"
+                        alt="Fotografia feita pelas lumen de dois irmão modelos para almbum de musica"
                         fill={true}
                         style={{ objectFit: 'cover' }}
                         quality={100}
@@ -35,7 +35,7 @@ export default function Portfolio() {
                 <div className="relative col-span-1 z-10">
                     <Image
                         src={product}
-                        alt="Fotografia das duas irmãs da Lumen"
+                        alt="Fotografia de produtos representando o serviço da lumen."
                         fill={true}
                         style={{ objectFit: 'cover' }}
                         quality={100}
@@ -45,7 +45,7 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            <Link href={''}>
+            <Link href={'https://www.instagram.com/'}>
                 <div className="w-[100%] font-bold bg-page moreLink flex justify-center items-center mt-8 py-[.4em] cursor-pointer">
                     VER MAIS
                 </div>

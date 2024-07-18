@@ -11,11 +11,11 @@ export default function Footer() {
 
     const Midias = () => {
         const list = [
-            { "icon": Pinterest, "alt": "", "link": "" },
-            { "icon": Instagran, "alt": "", "link": "" },
-            { "icon": Facebook, "alt": "", "link": "" },
-            { "icon": Twitter, "alt": "", "link": "" },
-            { "icon": Linkedin, "alt": "", "link": "" }
+            { "icon": Pinterest, "alt": "imagem do Pinterest para contato com a Lumem", "link": "https://br.pinterest.com/" },
+            { "icon": Instagran, "alt": "imagem do Instagran para contato com a Lumem", "link": "https://www.instagram.com/" },
+            { "icon": Facebook, "alt": "imagem do Facebook para contato com a Lumem", "link": "https://www.facebook.com/?locale=pt_BR" },
+            { "icon": Twitter, "alt": "imagem do Twitter para contato com a Lumem", "link": "https://x.com/" },
+            { "icon": Linkedin, "alt": "imagem do Linkedin para contato com a Lumem", "link": "https://www.linkedin.com/" }
         ];
         const tags = [];
 

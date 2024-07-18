@@ -92,7 +92,7 @@ export default function Vision() {
                     <span id='foto' className="w-[48dvw] h-[90%] relative transition-opacity delay-75">
                         <Image
                             src={capa}
-                            alt="Fotografia das duas irmãs da Lumen"
+                            alt="Imagem em preto e branco do rosto de uma mulher, representando a visão da empresa Lumen."
                             fill={true}
                             style={{ objectFit: 'cover' }}
                             quality={100}
@@ -105,7 +105,7 @@ export default function Vision() {
                 <span id='foto2' className="flex justify-center items-center w-[100%] h-[100%] relative z-10 transition-opacity delay-75">
                     <Image
                         src={contate}
-                        alt="Fotografia das duas irmãs da Lumen"
+                        alt="Fotografia em preto e branco de uma mulher com cabelos ao vento, representando o trabalho da lumen e incentivando o contato."
                         layout="responsive"
                         width={1440}
                         height={405}
@@ -113,7 +113,7 @@ export default function Vision() {
                         quality={100}
                     />
 
-                    <Link href={''}
+                    <Link href={'https://www.instagram.com/'}
                         className='text-page absolute z-20 cursor-pointer px-[1em] py-[.2em] border-solid font-bold
                       border-page opacity-75 border-[.1em] VisionC hover:opacity-100 hover:bg-[rgba(245,245,245)]
                       hover:text-bg hover:border-bg transition-all delay-75'>
