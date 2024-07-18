@@ -1,5 +1,6 @@
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
+import wordAdjust from '@/script/word_adjust';
 import Image from 'next/image';
 
 import capa from '../assets/capaPage.jpg';
@@ -9,7 +10,8 @@ export default function Vision() {
     const [isPortrait, setIsPortrait] = useState(false);
 
     useEffect(() => {
-        // Executar apenas no lado do cliente
+        const cleanup = wordAdjust('.VisionText');
+
         if (typeof window !== 'undefined') {
             const mediaQuery = window.matchMedia("(orientation: portrait)");
             setIsPortrait(mediaQuery.matches);
@@ -22,12 +24,13 @@ export default function Vision() {
 
             return () => {
                 mediaQuery.removeEventListener('change', handleOrientationChange);
+                cleanup;
             };
         }
     }, []);
 
     const { ref, inView } = useInView({
-        threshold: isPortrait ? 0.45 : 0.2,
+        threshold: isPortrait ? 0.45 : 0.1,
     });
 
     useEffect(() => {
@@ -77,7 +80,7 @@ export default function Vision() {
 
             <div className='flex w-[100dvw]'>
                 <div className='w-1/2 flex about-content'>
-                    <p className='VisionText px-[5dvw] text-bg'>
+                    <p className='VisionText h-[85%] px-[4.2dvw] text-bg text-justify'>
                         Cada pessoa possui uma essência única, e meu objetivo como fotógrafa é capturar essa singularidade em cada clique. A fotografia, para mim, é mais do que uma profissão;
                         é uma paixão que me permite revelar o melhor de cada indivíduo, destacando suas verdadeiras características e emoções.
                     </p>
@@ -110,7 +113,7 @@ export default function Vision() {
 
                     <a href=""
                         className='text-page absolute z-20 cursor-pointer px-[1em] py-[.2em] border-solid font-bold
-                      border-page opacity-75 border-[.1em] VisionText hover:opacity-100 hover:bg-[rgba(245,245,245)]
+                      border-page opacity-75 border-[.1em] VisionC hover:opacity-100 hover:bg-[rgba(245,245,245)]
                       hover:text-bg hover:border-bg transition-all delay-75'>
                         NOS CONTATE
                     </a>

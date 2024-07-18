@@ -7,7 +7,7 @@
     text-align-last: justify;
 }
 
-.VisionText {
+.VisionC {
     text-align: justify;
     font-size: clamp(1em, 1em + 2.5vw, 3em);
 }
@@ -17,7 +17,7 @@
         margin-top: 10em;
     }
 
-    .VisionText {
+    .VisionC {
         font-size: clamp(1em, 1em + 1.2vw, 3em);
     }
 
@@ -28,7 +28,7 @@
 }
 
 @media screen and (orientation: portrait) and (max-width: 740px) {
-    .VisionText {
+    .VisionC {
         font-size: clamp(.2em, .7em + 1vw, .9em);
     }
 }

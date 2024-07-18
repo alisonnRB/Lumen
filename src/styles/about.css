@@ -6,15 +6,16 @@
     height: 100dvh;
 }
 
-.aboutTitle{
-    font-size: clamp(.6em, 1em + 1.2vw, 2em);
+.aboutTitle {
+    font-size: clamp(.6em, 1em + 1.4vw, 2.3em);
     word-break: none;
 }
 
-.aboutText{
+.aboutText {
     text-align: justify;
-    font-size: clamp(.2em, 1em + 1.2vw, 1.9em);
+    font-size: clamp(.2em, 1em + 1.2vw, 1.6em);
 }
+
 
 @media screen and (orientation: portrait) {
     .aboutBox {
@@ -25,12 +26,8 @@
         height: 40dvh;
     }
 
-    .aboutTitle{
+    .aboutTitle {
         font-size: clamp(.6em, 1em + 1.2vw, .8em);
-    }
-
-    .aboutText{
-        font-size: clamp(.2em, .7em + 1vw, .95em);
     }
 }
 
@@ -43,11 +40,7 @@
         height: 40dvh;
     }
 
-    .aboutTitle{
+    .aboutTitle {
         font-size: clamp(.6em, 1em + 1.2vw, .8em);
-    }
-
-    .aboutText{
-        font-size: clamp(.2em, .7em + .1vw, .5em);
     }
 }
