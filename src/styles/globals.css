@@ -17,6 +17,19 @@ html {
   scroll-behavior: smooth;
 }
 
+@media screen and (min-width: 3000px) {
+  body {
+    padding-inline: calc(100dvw - 3000px);
+    background-color: #000000;
+  }
+
+  .vision-content {
+    padding-inline: calc(100dvw - 3000px);
+    position: relative;
+    right: calc(100dvw - 3000px);
+  }
+}
+
 ::-webkit-scrollbar {
   background-color: transparent;
   width: 3px;

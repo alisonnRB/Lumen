@@ -1,5 +1,6 @@
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import wordAdjust from '@/script/word_adjust';
 import Image from 'next/image';
 
@@ -34,19 +35,20 @@ export default function Vision() {
     });
 
     useEffect(() => {
+        const page = document.getElementById('page');
         const capa = document.getElementById('capa');
         const sobreposicao = document.getElementById('sobreposicao');
         const foto = document.getElementById('foto');
         const foto2 = document.getElementById('foto2');
 
         if (inView) {
-            document.body.style.backgroundColor = '#F5F5F5';
+            page.style.backgroundColor = '#F5F5F5';
             capa.style.opacity = 0;
             foto.style.opacity = 1;
             foto2.style.opacity = 1;
             sobreposicao.style.opacity = 1;
         } else {
-            document.body.style.backgroundColor = '#0E0E0E';
+            page.style.backgroundColor = '#0E0E0E';
             capa.style.opacity = 1;
             foto.style.opacity = 0;
             foto2.style.opacity = 0;
@@ -54,7 +56,7 @@ export default function Vision() {
         }
 
         return () => {
-            document.body.style.backgroundColor = '#0E0E0E';
+            page.style.backgroundColor = '#0E0E0E';
             capa.style.opacity = 1;
             foto.style.opacity = 0;
             foto2.style.opacity = 0;
@@ -64,7 +66,7 @@ export default function Vision() {
 
     return (
         <section ref={ref} className='w-[100dvw] vision-content flex flex-col pb-5'>
-            <div className='flex self-end justify-center text-justify w-[50dvw] relative'>
+            <div className='flex self-end justify-center text-justify w-[50%] relative'>
                 <div id='sobreposicao' className='bg-bg absolute w-[60%] h-[60%] z-30 overflow-clip transition-opacity delay-75'>
                     <div className='relative right-[27%]'>
                         <h1 className='visionTitle font-bold text-page w-[46dvw]'>
@@ -78,7 +80,7 @@ export default function Vision() {
                 </h1>
             </div>
 
-            <div className='flex w-[100dvw]'>
+            <div className='flex w-[100%]'>
                 <div className='w-1/2 flex about-content'>
                     <p className='VisionText h-[85%] px-[4.2dvw] text-bg text-justify'>
                         Cada pessoa possui uma essência única, e meu objetivo como fotógrafa é capturar essa singularidade em cada clique. A fotografia, para mim, é mais do que uma profissão;
@@ -99,8 +101,8 @@ export default function Vision() {
                 </div>
             </div>
 
-            <div className='w-[100dvw] mt-10'>
-                <span id='foto2' className=" flex justify-center items-center w-[100dvw] h-[100%] relative z-10 transition-opacity delay-75">
+            <div className='w-[100%] mt-10'>
+                <span id='foto2' className="flex justify-center items-center w-[100%] h-[100%] relative z-10 transition-opacity delay-75">
                     <Image
                         src={contate}
                         alt="Fotografia das duas irmãs da Lumen"
@@ -111,12 +113,12 @@ export default function Vision() {
                         quality={100}
                     />
 
-                    <a href=""
+                    <Link href={''}
                         className='text-page absolute z-20 cursor-pointer px-[1em] py-[.2em] border-solid font-bold
                       border-page opacity-75 border-[.1em] VisionC hover:opacity-100 hover:bg-[rgba(245,245,245)]
                       hover:text-bg hover:border-bg transition-all delay-75'>
                         NOS CONTATE
-                    </a>
+                    </Link>
                 </span>
             </div>
         </section>
