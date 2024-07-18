@@ -3,6 +3,7 @@ import About from "@/components/about";
 import Vision from "@/components/vision";
 import Portfolio from "@/components/portfolio";
 import Contato from "@/components/contato";
+import Footer from "@/components/footer";
 
 export default function Home() {
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Vision />
       <Portfolio />
       <Contato />
+      <Footer />
     </main>
   );
 }

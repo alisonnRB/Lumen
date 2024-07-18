@@ -1,0 +1,13 @@
+@media screen and (orientation: portrait) {
+    .contatosN {
+        font-size: clamp(.2em, 1em + 0.1vw, .6em);
+    }
+
+    .icon{
+        height: 50%;
+    }
+
+    .icon-box{
+        gap: .8em;
+    }
+}
