@@ -8,7 +8,7 @@ export default function Initial() {
             <div className="absolute inset-0 transition-opacity delay-[15ms]" id='capa'>
                 <Image
                     src={bgInit}
-                    alt="Fotografia de alta qualidade do ambiente luminoso da Lumen"
+                    alt="Fotografia de alta qualidade do ambiente luminoso da Lumens"
                     width={1440}
                     height={1599.97}
                     style={{ objectFit: 'cover', width: '100%', height: 'auto' }}
@@ -18,7 +18,7 @@ export default function Initial() {
             </div>
 
             <div className="absolute inset-0 z-10 flex flex-col justify-between textBoxSize pl-5">
-                <p className="text-page sizeLogo">LUMEN</p>
+                <p className="text-page sizeLogo">LUMENS</p>
 
                 <h1 className='text-page sizeText font-bold'>VEJA O<br /> MELHOR<br /> DE VOCÊ</h1>
             </div>

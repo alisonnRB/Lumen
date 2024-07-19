@@ -92,7 +92,7 @@ export default function Vision() {
                     <span id='foto' className="w-[48dvw] h-[90%] relative transition-opacity delay-75">
                         <Image
                             src={capa}
-                            alt="Imagem em preto e branco do rosto de uma mulher, representando a visão da empresa Lumen."
+                            alt="Imagem em preto e branco do rosto de uma mulher, representando a visão da empresa Lumens."
                             fill={true}
                             style={{ objectFit: 'cover' }}
                             quality={100}
@@ -105,7 +105,7 @@ export default function Vision() {
                 <span id='foto2' className="flex justify-center items-center w-[100%] h-[100%] relative z-10 transition-opacity delay-75">
                     <Image
                         src={contate}
-                        alt="Fotografia em preto e branco de uma mulher com cabelos ao vento, representando o trabalho da lumen e incentivando o contato."
+                        alt="Fotografia em preto e branco de uma mulher com cabelos ao vento, representando o trabalho da lumens e incentivando o contato."
                         layout="responsive"
                         width={1440}
                         height={405}

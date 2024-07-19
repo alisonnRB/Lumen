@@ -18,7 +18,7 @@ export default function About() {
                 <span className="h-[90%] w-[90%] relative">
                     <Image
                         src={aboutImage}
-                        alt="Fotografia das duas irmãs da Lumen"
+                        alt="Fotografia das duas irmãs da Lumens"
                         fill={true}
                         style={{ objectFit: 'contain' }}
                         quality={100}
@@ -28,7 +28,7 @@ export default function About() {
 
             <div className="w-1/2 flex flex-col justify-center items-center about-content gap-8 text-page relative bottom-8">
 
-                <h1 className="aboutTitle font-bold">SOBRE A LUMEN</h1>
+                <h1 className="aboutTitle font-bold">SOBRE A LUMENS</h1>
 
                 <p className="aboutText h-[90%] w-[80%]">
                     Bem-vindo à Lumem! Somos duas irmãs fotógrafas apaixonadas por capturar momentos que contam histórias e celebram a beleza da vida. Com um estilo elegante e atenção aos detalhes, transformamos cada clique em uma obra de arte.<br /><br />

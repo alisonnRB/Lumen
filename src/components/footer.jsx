@@ -52,7 +52,7 @@ export default function Footer() {
 
             <div className="flex gap-6 mt-20 justify-center text-page contatosN">
                 <p>+45 99876-4884</p>
-                <p className="border-solid border-page border-x-[.1em] px-6">Lumen_contato@gmail.com</p>
+                <p className="border-solid border-page border-x-[.1em] px-6">Lumens_contato@gmail.com</p>
                 <p>+45 99876-4884</p>
             </div>
 
